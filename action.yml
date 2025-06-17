@@ -1,0 +1,7 @@
+name: Check Maven Shade Plugin
+description: Checks if the Maven Shade Plugin is used in pom.xml
+runs:
+  using: composite
+  steps:
+    - run: ${{ github.action_path }}/scripts/check-shade.sh
+      shell: check.sh
